@@ -1,0 +1,32 @@
+<% form_for @theme do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :author %><br />
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :published_year %><br />
+    <%= f.text_field :published_year %>
+  </p>
+  <p>
+    <%= f.label :profession_name %><br />
+    <%= f.text_field :profession_name %>
+  </p>
+  <p>
+    <%= f.label :code_name %><br />
+    <%= f.text_field :code_name %>
+  </p>
+  <p>
+    <%= f.label :grade_name %><br />
+    <%= f.text_field :grade_name %>
+  </p>
+  <p>
+    <%= f.label :area %><br />
+    <%= f.text_field :area %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>

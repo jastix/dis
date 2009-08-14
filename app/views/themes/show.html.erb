@@ -1,0 +1,36 @@
+<% title "Theme" %>
+
+<p>
+  <strong>Title:</strong>
+  <%=h @theme.title %>
+</p>
+<p>
+  <strong>Author:</strong>
+  <%=h @theme.author %>
+</p>
+<p>
+  <strong>Published Year:</strong>
+  <%=h @theme.published_year %>
+</p>
+<p>
+  <strong>Profession Name:</strong>
+  <%=h @theme.profession_name %>
+</p>
+<p>
+  <strong>Code Name:</strong>
+  <%=h @theme.code_name %>
+</p>
+<p>
+  <strong>Grade Name:</strong>
+  <%=h @theme.grade_name %>
+</p>
+<p>
+  <strong>Area:</strong>
+  <%=h @theme.area %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_theme_path(@theme) %> |
+  <%= link_to "Destroy", @theme, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", themes_path %>
+</p>

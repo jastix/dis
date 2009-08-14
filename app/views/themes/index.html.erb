@@ -1,0 +1,29 @@
+<% title "Themes" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Published Year</th>
+    <th>Profession Name</th>
+    <th>Code Name</th>
+    <th>Grade Name</th>
+    <th>Area</th>
+  </tr>
+  <% for theme in @themes %>
+    <tr>
+      <td><%=h theme.title %></td>
+      <td><%=h theme.author %></td>
+      <td><%=h theme.published_year %></td>
+      <td><%=h theme.profession_name %></td>
+      <td><%=h theme.code_name %></td>
+      <td><%=h theme.grade_name %></td>
+      <td><%=h theme.area %></td>
+      <td><%= link_to "Show", theme %></td>
+      <td><%= link_to "Edit", edit_theme_path(theme) %></td>
+      <td><%= link_to "Destroy", theme, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Theme", new_theme_path %></p>

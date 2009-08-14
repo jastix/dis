@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  author: MyString
+  published_year: 1
+  profession_name: MyString
+  code_name: MyString
+  grade_name: MyString
+  area: MyString
+
+two:
+  title: MyString
+  author: MyString
+  published_year: 1
+  profession_name: MyString
+  code_name: MyString
+  grade_name: MyString
+  area: MyString
