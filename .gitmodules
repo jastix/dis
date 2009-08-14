@@ -1,0 +1,4 @@
+[submodule "vendor/plugins/searchlogic"]
+	path = vendor/plugins/searchlogic
+	url = git://github.com/binarylogic/searchlogic.git
+
