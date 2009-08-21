@@ -8,3 +8,7 @@ Factory.define :theme do |f|
   f.area "informatics"
 end
 
+Factory.define :area do |f|
+  f.title "informatics"
+end
+

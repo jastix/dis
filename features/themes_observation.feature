@@ -1,6 +1,6 @@
 Feature: Observe themes
 
-  In order to see list of themes
+  In order to see  list of themes
   As a registered user
   I want to see a table with themes
 

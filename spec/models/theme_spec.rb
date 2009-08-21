@@ -16,4 +16,7 @@ describe Theme do
   it "should create a new instance given valid attributes" do
     Theme.create!(@valid_attributes)
   end
+
+
 end
+

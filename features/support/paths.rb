@@ -20,6 +20,9 @@ module NavigationHelpers
       new_session_path
     when /the password reset request page/i
       new_password_path
+    # end clearance
+    when /the list of areas/
+      areas_path
 
     # Add more mappings here.
     # Here is a more fancy example:

@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :areas
+
   map.resources :themes
 
   map.root :controller => 'themes', :action => 'index'
