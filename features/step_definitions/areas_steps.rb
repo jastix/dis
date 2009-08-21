@@ -1,4 +1,4 @@
-Given /^I have area titled informatics$/ do  # why i can't use regular expression here?
+Given /^I have area titled ([^\"]*)$/ do |arg|
   Factory(:area)
 end
 Given /^I have no areas$/ do
