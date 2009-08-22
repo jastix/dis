@@ -26,8 +26,10 @@ class AreasController < ApplicationController
         end
 
       else
-        wants.html { render :action => 'new' }
-
+        wants.html do
+        flash[:warning] = "Area can\'t be created."
+         render :action => 'new'
+          end
       end
     end
   end

@@ -19,3 +19,30 @@ Feature: Managing areas
     And i should see "cookery"
     And i should have 1 area
 
+  Scenario: area title should not be blank
+    Given I have no areas
+    And I am on the list of areas
+    When i follow New Area
+    And i fill in "Title" with ""
+    And i press "Create"
+    And i should see "Title can't be blank"
+    And i should have 0 area
+
+  Scenario: area title should be more than 2 symbols
+    Given I have no areas
+    And I am on the list of areas
+    When i follow New Area
+    And i fill in "Title" with "bu"
+    And i press "Create"
+    And i should see "Title is too short"
+    And i should have 0 area
+
+  Scenario: area title should be start with letters
+    Given I have no areas
+    And I am on the list of areas
+    When i follow New Area
+    And i fill in "Title" with "2bu"
+    And i press "Create"
+    And i should see "Title is invalid"
+    And i should have 0 area
+

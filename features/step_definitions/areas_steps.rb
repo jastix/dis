@@ -1,5 +1,5 @@
 Given /^I have area titled ([^\"]*)$/ do |arg|
-  Factory(:area)
+  Factory(:area, :title => arg)
 end
 Given /^I have no areas$/ do
   Area.delete_all
