@@ -23,7 +23,8 @@ module NavigationHelpers
     # end clearance
     when /the list of areas/
       areas_path
-
+    when /the list of organizations/
+      organizations_path
     # Add more mappings here.
     # Here is a more fancy example:
     #

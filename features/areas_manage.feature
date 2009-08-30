@@ -5,9 +5,9 @@ Feature: Managing areas
   I want to see a table with areas, add new areas, edit and delete them
 
   Scenario: Area list
-    Given  I have area titled informatics
+    Given  I have area titled Informatics
     When I go to the list of areas
-    Then I should see "informatics"
+    Then I should see "Informatics"
 
   Scenario: add valid Area
     Given I have no areas

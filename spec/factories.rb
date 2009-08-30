@@ -12,3 +12,7 @@ Factory.define :area do |f|
   f.title "informatics"
 end
 
+Factory.define :organization do |f|
+  f.title "org name"
+end
+
